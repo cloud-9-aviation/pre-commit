@@ -45,5 +45,12 @@
 			}
 		}
 	},
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"toolsToInstall": "poetry",
+			"version": "none"
+		}
+	},
 	"onCreateCommand": "pre-commit install-hooks"
 }

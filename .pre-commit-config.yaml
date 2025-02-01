@@ -44,6 +44,7 @@ repos:
     rev: v2.4.1
     hooks:
       - id: codespell
+        args: ["--skip=poetry.lock"]
 
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
@@ -62,3 +63,10 @@ repos:
     hooks:
       - id: check-manifest
         stages: [manual]
+
+  - repo: https://github.com/python-poetry/poetry
+    rev: 2.0.1
+    hooks:
+      - id: poetry-check
+      - id: poetry-lock
+      - id: poetry-install

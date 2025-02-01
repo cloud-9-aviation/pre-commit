@@ -20,8 +20,13 @@
 				"ms-python.black-formatter",
 				"ms-vsliveshare.vsliveshare",
 				"ryanluker.vscode-coverage-gutters",
-				"bungcip.better-toml",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"tamasfe.even-better-toml",
+				"GitHub.vscode-github-actions",
+				"GitHub.vscode-pull-request-github",
+				"GitHub.github-vscode-theme",
+				"GitHub.copilot-chat",
+				"redhat.vscode-yaml"
 			],
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
@@ -38,6 +43,13 @@
 					"/usr/local/py-utils/bin/isort"
 				]
 			}
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"toolsToInstall": "poetry",
+			"version": "none"
 		}
 	},
 	"onCreateCommand": "pre-commit install-hooks"

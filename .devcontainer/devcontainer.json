@@ -25,7 +25,8 @@
 				"GitHub.vscode-github-actions",
 				"GitHub.vscode-pull-request-github",
 				"GitHub.github-vscode-theme",
-				"GitHub.copilot-chat"
+				"GitHub.copilot-chat",
+				"redhat.vscode-yaml"
 			],
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
